@@ -1,0 +1,114 @@
+Start testing: Oct 27 10:48 PDT
+----------------------------------------------------------
+1/4 Testing: theme
+1/4 Test: theme
+Command: "/home/dxle/builds/Rolly/build/theme_tests"
+Directory: /home/dxle/builds/Rolly/build
+"theme" start time: Oct 27 10:48 PDT
+Output:
+----------------------------------------------------------
+********* Start testing of ThemeTests *********
+Config: Using QtTest library 6.12.0, Qt 6.12.0 (x86_64-little_endian-lp64 shared (dynamic) release build; by GCC 16.2.1 20260810), arch unknown
+PASS   : ThemeTests::initTestCase()
+PASS   : ThemeTests::alphaComesFirst()
+PASS   : ThemeTests::qtRgbaMatchesHex()
+PASS   : ThemeTests::flatteningDropsOnlyAlpha()
+PASS   : ThemeTests::opaqueColorsStaySixDigits()
+PASS   : ThemeTests::rejectsGarbage()
+PASS   : ThemeTests::followsDirectoryWithQmlColors()
+PASS   : ThemeTests::cleanupTestCase()
+Totals: 8 passed, 0 failed, 0 skipped, 0 blacklisted, 2ms
+********* Finished testing of ThemeTests *********
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"theme" end time: Oct 27 10:48 PDT
+"theme" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/4 Testing: archive
+2/4 Test: archive
+Command: "/home/dxle/builds/Rolly/build/archive_tests"
+Directory: /home/dxle/builds/Rolly/build
+"archive" start time: Oct 27 10:48 PDT
+Output:
+----------------------------------------------------------
+********* Start testing of ArchiveTests *********
+Config: Using QtTest library 6.12.0, Qt 6.12.0 (x86_64-little_endian-lp64 shared (dynamic) release build; by GCC 16.2.1 20260810), arch unknown
+PASS   : ArchiveTests::initTestCase()
+PASS   : ArchiveTests::roundTripEveryWritableFormat(.zip)
+PASS   : ArchiveTests::roundTripEveryWritableFormat(.7z)
+PASS   : ArchiveTests::roundTripEveryWritableFormat(.tar)
+PASS   : ArchiveTests::roundTripEveryWritableFormat(.tar.gz)
+PASS   : ArchiveTests::roundTripEveryWritableFormat(.tar.xz)
+PASS   : ArchiveTests::roundTripEveryWritableFormat(.tar.bz2)
+PASS   : ArchiveTests::roundTripEveryWritableFormat(.tar.zst)
+PASS   : ArchiveTests::addReplacesAndRemoveDeletes()
+PASS   : ArchiveTests::selectedExtractionKeepsOnlySelection()
+PASS   : ArchiveTests::refusesPathTraversal()
+PASS   : ArchiveTests::neverWritesThroughEscapingSymlink()
+PASS   : ArchiveTests::cancellationLeavesOriginalUntouched()
+PASS   : ArchiveTests::addKeepsExistingContent(.zip)
+PASS   : ArchiveTests::addKeepsExistingContent(.7z)
+PASS   : ArchiveTests::addKeepsExistingContent(.tar)
+PASS   : ArchiveTests::addKeepsExistingContent(.tar.gz)
+PASS   : ArchiveTests::addKeepsExistingContent(.tar.xz)
+PASS   : ArchiveTests::addKeepsExistingContent(.tar.bz2)
+PASS   : ArchiveTests::addKeepsExistingContent(.tar.zst)
+PASS   : ArchiveTests::readOnlyFormatsAreNotModifiable()
+PASS   : ArchiveTests::cleanupTestCase()
+Totals: 22 passed, 0 failed, 0 skipped, 0 blacklisted, 55ms
+********* Finished testing of ArchiveTests *********
+<end of output>
+Test time =   0.08 sec
+----------------------------------------------------------
+Test Passed.
+"archive" end time: Oct 27 10:48 PDT
+"archive" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/4 Testing: ui
+3/4 Test: ui
+Command: "/home/dxle/builds/Rolly/build/ui_tests"
+Directory: /home/dxle/builds/Rolly/build
+"ui" start time: Oct 27 10:48 PDT
+Output:
+----------------------------------------------------------
+********* Start testing of UiTests *********
+Config: Using QtTest library 6.12.0, Qt 6.12.0 (x86_64-little_endian-lp64 shared (dynamic) release build; by GCC 16.2.1 20260810), arch unknown
+PASS   : UiTests::initTestCase()
+QWARN  : UiTests::opensArchiveAndBrowsesFolders() QFont::setPointSizeF: Point size <= 0 (-1.350000), must be greater than 0
+QWARN  : UiTests::opensArchiveAndBrowsesFolders() QFont::setPointSizeF: Point size <= 0 (-0.920000), must be greater than 0
+PASS   : UiTests::opensArchiveAndBrowsesFolders()
+QWARN  : UiTests::followsThemeFileLive() QFont::setPointSizeF: Point size <= 0 (-1.350000), must be greater than 0
+QWARN  : UiTests::followsThemeFileLive() QFont::setPointSizeF: Point size <= 0 (-0.920000), must be greater than 0
+PASS   : UiTests::followsThemeFileLive()
+PASS   : UiTests::cleanupTestCase()
+Totals: 4 passed, 0 failed, 0 skipped, 0 blacklisted, 93ms
+********* Finished testing of UiTests *********
+<end of output>
+Test time =   0.12 sec
+----------------------------------------------------------
+Test Passed.
+"ui" end time: Oct 27 10:48 PDT
+"ui" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/4 Testing: cli
+4/4 Test: cli
+Command: "/usr/bin/bash" "/home/dxle/builds/Rolly/tests/cli_test.sh" "/home/dxle/builds/Rolly/build/rolly"
+Directory: /home/dxle/builds/Rolly/build
+"cli" start time: Oct 27 10:48 PDT
+Output:
+----------------------------------------------------------
+ok
+<end of output>
+Test time =   0.14 sec
+----------------------------------------------------------
+Test Passed.
+"cli" end time: Oct 27 10:48 PDT
+"cli" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Oct 27 10:48 PDT

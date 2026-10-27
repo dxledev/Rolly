@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=Rolly
+Comment=Create, browse and extract archives
+Exec=rolly %F
+Icon=io.github.rolly
+Terminal=false
+Categories=Utility;Archiving;Compression;
+Keywords=archive;zip;tar;7z;compress;extract;
+MimeType=application/zip;application/x-7z-compressed;application/x-tar;application/gzip;application/x-bzip2;application/x-xz;application/zstd;application/x-compressed-tar;application/x-bzip-compressed-tar;application/x-xz-compressed-tar;application/x-zstd-compressed-tar;application/vnd.rar;application/x-rar;application/x-cpio;application/vnd.debian.binary-package;application/x-iso9660-image;
+StartupWMClass=io.github.rolly
